@@ -6,6 +6,29 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/marble
 
 PRODUCT_COPY_FILES += \
+    vendor/xiaomi/marble/proprietary/product/etc/permissions/UimGba.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGba.xml \
+    vendor/xiaomi/marble/proprietary/product/etc/permissions/UimGbaManager.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimGbaManager.xml \
+    vendor/xiaomi/marble/proprietary/product/etc/permissions/UimService.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/UimService.xml \
+    vendor/xiaomi/marble/proprietary/system/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
+    vendor/xiaomi/marble/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
+    vendor/xiaomi/marble/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
+    vendor/xiaomi/marble/proprietary/system_ext/etc/init/tcmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/tcmd.rc \
+    vendor/xiaomi/marble/proprietary/system_ext/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/vendor.qti.hardware.qccsyshal@1.2-service.rc \
+    vendor/xiaomi/marble/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
+    vendor/xiaomi/marble/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
+    vendor/xiaomi/marble/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
+    vendor/xiaomi/marble/proprietary/system_ext/etc/permissions/com.qti.qcc.vendor_qcc.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.qcc.vendor_qcc.xml \
+    vendor/xiaomi/marble/proprietary/system_ext/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/dpmapi.xml \
+    vendor/xiaomi/marble/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
+    vendor/xiaomi/marble/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
+    vendor/xiaomi/marble/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
+    vendor/xiaomi/marble/proprietary/system_ext/etc/permissions/vendor.qti.ims.rcsservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/vendor.qti.ims.rcsservice.xml \
+    vendor/xiaomi/marble/proprietary/system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml \
+    vendor/xiaomi/marble/proprietary/system_ext/etc/seccomp_policy/tcmd.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/tcmd.policy \
+    vendor/xiaomi/marble/proprietary/system_ext/etc/seccomp_policy/wfdservice64.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice64.policy \
+    vendor/xiaomi/marble/proprietary/system_ext/etc/sysconfig/qti_telephony_system_packages_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_telephony_system_packages_config.xml \
+    vendor/xiaomi/marble/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
+    vendor/xiaomi/marble/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
     vendor/xiaomi/marble/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd \
     vendor/xiaomi/marble/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd \
     vendor/xiaomi/marble/proprietary/vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.36_enpu2_comp.pmd:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.36_enpu2_comp.pmd \
@@ -401,14 +424,202 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/etc/camera/xiaomi/thirdpartyrawsupernightyuv.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/thirdpartyrawsupernightyuv.json \
     vendor/xiaomi/marble/proprietary/vendor/etc/camera/xiaomi/thirdpartysnapshot.json:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomi/thirdpartysnapshot.json \
     vendor/xiaomi/marble/proprietary/vendor/etc/camera/xiaomiSceneDetection.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/xiaomiSceneDetection.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/cne/mwqem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/mwqem.conf \
+    vendor/xiaomi/marble/proprietary/vendor/etc/cne/profileMwqem.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/profileMwqem.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile2.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile3.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile4.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile5.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile5.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile6.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile6.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile7.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile7.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile1.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile15.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile15.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile16.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile16.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile17.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile17.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile18.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile18.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile19.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile19.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile2.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile20.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile20.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile21.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile21.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile3.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile32.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile32.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile4.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile5.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile5.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile6.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile6.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/cne/wqeclient/ROW/ROW_profile7.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ROW/ROW_profile7.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile1.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile2.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile3.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile4.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile4.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile5.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile6.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile7.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile7.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/configstore/vpp.configstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/configstore/vpp.configstore.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/display/DPU660.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU660.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/display/DPU670.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU670.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/display/DPU720.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU720.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/display/DPU7__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU7__.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/display/DPU820.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU820.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/display/DPU830.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU830.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/display/DPU860.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU860.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/display/DPU8__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU8__.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/display/DPU9__.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/DPU9__.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/display/advanced_sf_offsets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/advanced_sf_offsets.xml \
     vendor/xiaomi/marble/proprietary/vendor/etc/display/qdcm_calib_data_xiaomi_36_02_0a_video_mode_dsc_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_xiaomi_36_02_0a_video_mode_dsc_dsi_panel.json \
     vendor/xiaomi/marble/proprietary/vendor/etc/display/qdcm_calib_data_xiaomi_36_0d_0b_video_mode_dsc_dsi_panel.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/qdcm_calib_data_xiaomi_36_0d_0b_video_mode_dsc_dsi_panel.json \
+    vendor/xiaomi/marble/proprietary/vendor/etc/display/thermallevel_to_fps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/thermallevel_to_fps.xml \
     vendor/xiaomi/marble/proprietary/vendor/etc/displayconfig/display_id_4630946370515662721.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946370515662721.xml \
     vendor/xiaomi/marble/proprietary/vendor/etc/displayconfig/display_id_4630946480857061761.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946480857061761.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/dpm_vndr/vendor.dpm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/dpm_vndr/vendor.dpm.conf \
+    vendor/xiaomi/marble/proprietary/vendor/etc/eva/facedetection/model3.dat:$(TARGET_COPY_OUT_VENDOR)/etc/eva/facedetection/model3.dat \
+    vendor/xiaomi/marble/proprietary/vendor/etc/face3d/qcnn_concat_file_model-0324_2_encrypted:$(TARGET_COPY_OUT_VENDOR)/etc/face3d/qcnn_concat_file_model-0324_2_encrypted \
+    vendor/xiaomi/marble/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init.qti.fm.sh:$(TARGET_COPY_OUT_VENDOR)/etc/init.qti.fm.sh \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.1-service-qti.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/android.hardware.security.keymint-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint-service-qti.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/dpmQmiMgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dpmQmiMgr.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/hw/init.batterysecret.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.batterysecret.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/hw/init.mi_thermald.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.mi_thermald.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/ims_rtp_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ims_rtp_daemon.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/imsdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdaemon.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/init.qdmastats.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qdmastats.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/init.qti.fm.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.fm.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/init.qti.qcv.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qti.qcv.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/init.vendor.ins.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.ins.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/init.vendor.wlan.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.wlan.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/init_thermal-engine-v2.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine-v2.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/ipa_fws.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipa_fws.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/loc-launcher.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/loc-launcher.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/qconfig.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qconfig.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/qcrilNrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrilNrd.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/qdcmss.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qdcmss.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/qmipriod.debug.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.debug.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/qmipriod.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qmipriod.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/qms.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qms.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.dpmd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.dpmd.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-guestos-service.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.camera.provider@2.7-service_64.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.camera.provider@2.7-service_64.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.diag.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.diag.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.esepowermanager@1.1-service.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.hardware.perf-hal-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.perf-hal-service.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter@1.0-service.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.media.c2audio@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2audio@1.0-service.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.qspmhal@1.0-service.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.secure_element@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.secure_element@1.2-service.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vmmgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vmmgr.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
+    vendor/xiaomi/marble/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
     vendor/xiaomi/marble/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
     vendor/xiaomi/marble/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
+    vendor/xiaomi/marble/proprietary/vendor/etc/media_cape/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_cape/video_system_specs.json \
+    vendor/xiaomi/marble/proprietary/vendor/etc/media_codecs_cape.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_cape.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/media_codecs_diwali_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_diwali_v0.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/media_codecs_diwali_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_diwali_v1.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/media_codecs_diwali_v2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_diwali_v2.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/media_codecs_performance_cape.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_cape.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/media_codecs_performance_diwali_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_diwali_v0.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/media_codecs_performance_diwali_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_diwali_v1.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/media_codecs_performance_diwali_v2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_diwali_v2.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/media_codecs_performance_taro.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_taro.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/media_codecs_performance_ukee.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_ukee.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/media_codecs_taro.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_taro.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/media_codecs_ukee.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_ukee.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/media_diwali_v0/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_diwali_v0/video_system_specs.json \
+    vendor/xiaomi/marble/proprietary/vendor/etc/media_diwali_v1/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_diwali_v1/video_system_specs.json \
+    vendor/xiaomi/marble/proprietary/vendor/etc/media_diwali_v2/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_diwali_v2/video_system_specs.json \
+    vendor/xiaomi/marble/proprietary/vendor/etc/media_profiles_cape.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_cape.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/media_profiles_diwali_v0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_diwali_v0.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/media_profiles_diwali_v1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_diwali_v1.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/media_profiles_diwali_v2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_diwali_v2.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/media_profiles_taro.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_taro.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/media_profiles_ukee.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_ukee.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/media_taro/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_taro/video_system_specs.json \
+    vendor/xiaomi/marble/proprietary/vendor/etc/media_ukee/video_system_specs.json:$(TARGET_COPY_OUT_VENDOR)/etc/media_ukee/video_system_specs.json \
+    vendor/xiaomi/marble/proprietary/vendor/etc/models/acd/event.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/event.eai \
+    vendor/xiaomi/marble/proprietary/vendor/etc/models/acd/music.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/music.eai \
+    vendor/xiaomi/marble/proprietary/vendor/etc/models/acd/speech.eai:$(TARGET_COPY_OUT_VENDOR)/etc/models/acd/speech.eai \
+    vendor/xiaomi/marble/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
+    vendor/xiaomi/marble/proprietary/vendor/etc/perf/avcsysnodesconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/avcsysnodesconfigs.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/perf/commonresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonresourceconfigs.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/perf/commonsysnodesconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/commonsysnodesconfigs.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/perf/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostsconfig.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/perf/perfboostselection.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfboostselection.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/perf/perfconfigstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/perfconfigstore.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/perf/targetconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetconfig.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/perf/targetresourceconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetresourceconfigs.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/perf/targetsysnodesconfigs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/targetsysnodesconfigs.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/perf/thermal-boost.conf:$(TARGET_COPY_OUT_VENDOR)/etc/perf/thermal-boost.conf \
+    vendor/xiaomi/marble/proprietary/vendor/etc/permissions/android.hardware.hardware_keystore.km100.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hardware_keystore.km100.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/permissions/noRil/apq_excluded_telephony_features.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/noRil/apq_excluded_telephony_features.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
+    vendor/xiaomi/marble/proprietary/vendor/etc/qcril_database/upgrade/config/10.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/10.0_config.sql \
+    vendor/xiaomi/marble/proprietary/vendor/etc/qcril_database/upgrade/config/11.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/11.0_config.sql \
+    vendor/xiaomi/marble/proprietary/vendor/etc/qcril_database/upgrade/config/12.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/12.0_config.sql \
+    vendor/xiaomi/marble/proprietary/vendor/etc/qcril_database/upgrade/config/13.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/13.0_config.sql \
+    vendor/xiaomi/marble/proprietary/vendor/etc/qcril_database/upgrade/config/14.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/14.0_config.sql \
+    vendor/xiaomi/marble/proprietary/vendor/etc/qcril_database/upgrade/config/16.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/16.0_config.sql \
+    vendor/xiaomi/marble/proprietary/vendor/etc/qcril_database/upgrade/config/6.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/6.0_config.sql \
+    vendor/xiaomi/marble/proprietary/vendor/etc/qcril_database/upgrade/config/7.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/7.0_config.sql \
+    vendor/xiaomi/marble/proprietary/vendor/etc/qcril_database/upgrade/config/8.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/8.0_config.sql \
+    vendor/xiaomi/marble/proprietary/vendor/etc/qcril_database/upgrade/config/9.0_config.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/config/9.0_config.sql \
+    vendor/xiaomi/marble/proprietary/vendor/etc/qcril_database/upgrade/other/0_initial_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/0_initial_qcrilnr.sql \
+    vendor/xiaomi/marble/proprietary/vendor/etc/qcril_database/upgrade/other/10_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/10_version_update_ecc_table.sql \
+    vendor/xiaomi/marble/proprietary/vendor/etc/qcril_database/upgrade/other/11_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/11_version_update_ecc_table.sql \
+    vendor/xiaomi/marble/proprietary/vendor/etc/qcril_database/upgrade/other/12_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/12_version_update_ecc_table.sql \
+    vendor/xiaomi/marble/proprietary/vendor/etc/qcril_database/upgrade/other/1_version_intro_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/1_version_intro_qcrilnr.sql \
+    vendor/xiaomi/marble/proprietary/vendor/etc/qcril_database/upgrade/other/2_version_add_wps_config_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/2_version_add_wps_config_qcrilnr.sql \
+    vendor/xiaomi/marble/proprietary/vendor/etc/qcril_database/upgrade/other/3_version_update_wps_config_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/3_version_update_wps_config_qcrilnr.sql \
+    vendor/xiaomi/marble/proprietary/vendor/etc/qcril_database/upgrade/other/4_version_update_ecc_table_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/4_version_update_ecc_table_qcrilnr.sql \
+    vendor/xiaomi/marble/proprietary/vendor/etc/qcril_database/upgrade/other/5_version_update_ecc_table_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/5_version_update_ecc_table_qcrilnr.sql \
+    vendor/xiaomi/marble/proprietary/vendor/etc/qcril_database/upgrade/other/6_version_change_property_table_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/6_version_change_property_table_qcrilnr.sql \
+    vendor/xiaomi/marble/proprietary/vendor/etc/qcril_database/upgrade/other/7_version_update_ecc_table_qcrilnr.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/7_version_update_ecc_table_qcrilnr.sql \
+    vendor/xiaomi/marble/proprietary/vendor/etc/qcril_database/upgrade/other/8_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/8_version_update_ecc_table.sql \
+    vendor/xiaomi/marble/proprietary/vendor/etc/qcril_database/upgrade/other/9_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/etc/qcril_database/upgrade/other/9_version_update_ecc_table.sql \
+    vendor/xiaomi/marble/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
+    vendor/xiaomi/marble/proprietary/vendor/etc/seccomp_policy/atfwd@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/atfwd@2.0.policy \
+    vendor/xiaomi/marble/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm64.policy \
+    vendor/xiaomi/marble/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm64.policy \
+    vendor/xiaomi/marble/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
+    vendor/xiaomi/marble/proprietary/vendor/etc/seccomp_policy/qcrilnr@2.0.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qcrilnr@2.0.policy \
+    vendor/xiaomi/marble/proprietary/vendor/etc/seccomp_policy/qspm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qspm.policy \
+    vendor/xiaomi/marble/proprietary/vendor/etc/seccomp_policy/qti-systemd.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/qti-systemd.policy \
+    vendor/xiaomi/marble/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
+    vendor/xiaomi/marble/proprietary/vendor/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdhdcphalservice.policy \
+    vendor/xiaomi/marble/proprietary/vendor/etc/seccomp_policy/wfdvndservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdvndservice.policy \
+    vendor/xiaomi/marble/proprietary/vendor/etc/seccomp_policy/wifidisplayhalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wifidisplayhalservice.policy \
     vendor/xiaomi/marble/proprietary/vendor/etc/sensors/config/lightSensorConfig.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lightSensorConfig.json \
     vendor/xiaomi/marble/proprietary/vendor/etc/sensors/config/lsm6dso_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lsm6dso_0.json \
     vendor/xiaomi/marble/proprietary/vendor/etc/sensors/config/qmc6308_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/qmc6308_0.json \
@@ -442,6 +653,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/etc/sensors/config/tcs3701.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/tcs3701.json \
     vendor/xiaomi/marble/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/xiaomi/marble/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
+    vendor/xiaomi/marble/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
+    vendor/xiaomi/marble/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
+    vendor/xiaomi/marble/proprietary/vendor/etc/telephony_packages.xml:$(TARGET_COPY_OUT_VENDOR)/etc/telephony_packages.xml \
     vendor/xiaomi/marble/proprietary/vendor/etc/thermal-4k.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-4k.conf \
     vendor/xiaomi/marble/proprietary/vendor/etc/thermal-camera.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-camera.conf \
     vendor/xiaomi/marble/proprietary/vendor/etc/thermal-cclassvideo.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-cclassvideo.conf \
@@ -477,6 +691,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/etc/vibrator/effect_3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/effect_3.bin \
     vendor/xiaomi/marble/proprietary/vendor/etc/vibrator/effect_4.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/effect_4.bin \
     vendor/xiaomi/marble/proprietary/vendor/etc/vibrator/effect_5.bin:$(TARGET_COPY_OUT_VENDOR)/etc/vibrator/effect_5.bin \
+    vendor/xiaomi/marble/proprietary/vendor/etc/vmmgr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/vmmgr.conf \
+    vendor/xiaomi/marble/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/xiaomi_ecc_list.xml:$(TARGET_COPY_OUT_VENDOR)/etc/xiaomi_ecc_list.xml \
+    vendor/xiaomi/marble/proprietary/vendor/etc/xiaomi_ecc_list_preference.xml:$(TARGET_COPY_OUT_VENDOR)/etc/xiaomi_ecc_list_preference.xml \
     vendor/xiaomi/marble/proprietary/vendor/firmware/CAMERA_ICP.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b00 \
     vendor/xiaomi/marble/proprietary/vendor/firmware/CAMERA_ICP.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b01 \
     vendor/xiaomi/marble/proprietary/vendor/firmware/CAMERA_ICP.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.b02 \
@@ -504,6 +722,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/firmware/CAMERA_ICP.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.mdt \
     vendor/xiaomi/marble/proprietary/vendor/firmware/CAMERA_ICP_170.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_170.elf \
     vendor/xiaomi/marble/proprietary/vendor/firmware/CAMERA_ICP_480.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP_480.elf \
+    vendor/xiaomi/marble/proprietary/vendor/firmware/a660_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a660_sqe.fw \
+    vendor/xiaomi/marble/proprietary/vendor/firmware/a662_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a662_gmu.bin \
+    vendor/xiaomi/marble/proprietary/vendor/firmware/a730_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a730_sqe.fw \
     vendor/xiaomi/marble/proprietary/vendor/firmware/a730_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a730_zap.b00 \
     vendor/xiaomi/marble/proprietary/vendor/firmware/a730_zap.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/a730_zap.b01 \
     vendor/xiaomi/marble/proprietary/vendor/firmware/a730_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a730_zap.b02 \
@@ -564,6 +785,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/firmware/evautil64.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/evautil64.b06 \
     vendor/xiaomi/marble/proprietary/vendor/firmware/evautil64.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/evautil64.b07 \
     vendor/xiaomi/marble/proprietary/vendor/firmware/evautil64.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/evautil64.mdt \
+    vendor/xiaomi/marble/proprietary/vendor/firmware/gmu_gen70000.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/gmu_gen70000.bin \
     vendor/xiaomi/marble/proprietary/vendor/firmware/goodix_cfg_group_TM.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_cfg_group_TM.bin \
     vendor/xiaomi/marble/proprietary/vendor/firmware/goodix_cfg_group_TM_Second.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_cfg_group_TM_Second.bin \
     vendor/xiaomi/marble/proprietary/vendor/firmware/goodix_firmware_TM.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/goodix_firmware_TM.bin \
@@ -582,6 +804,10 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/firmware/vpu20_4v.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.b19 \
     vendor/xiaomi/marble/proprietary/vendor/firmware/vpu20_4v.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.mbn \
     vendor/xiaomi/marble/proprietary/vendor/firmware/vpu20_4v.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/vpu20_4v.mdt \
+    vendor/xiaomi/marble/proprietary/vendor/gpu/kbc/sequence_manifest.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/sequence_manifest.bin \
+    vendor/xiaomi/marble/proprietary/vendor/gpu/kbc/unified_kbcs_32.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_32.bin \
+    vendor/xiaomi/marble/proprietary/vendor/gpu/kbc/unified_kbcs_64.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_kbcs_64.bin \
+    vendor/xiaomi/marble/proprietary/vendor/gpu/kbc/unified_ksqs.bin:$(TARGET_COPY_OUT_VENDOR)/gpu/kbc/unified_ksqs.bin \
     vendor/xiaomi/marble/proprietary/vendor/lib64/camera/com.qti.sensormodule.marble_ofilm_gc02m1_macro_i.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.marble_ofilm_gc02m1_macro_i.bin \
     vendor/xiaomi/marble/proprietary/vendor/lib64/camera/com.qti.sensormodule.marble_ofilm_imx355_ultra_i.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.marble_ofilm_imx355_ultra_i.bin \
     vendor/xiaomi/marble/proprietary/vendor/lib64/camera/com.qti.sensormodule.marble_ofilm_ov64b40_wide_i.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.marble_ofilm_ov64b40_wide_i.bin \
@@ -598,6 +824,29 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/marble/proprietary/vendor/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/libnfc-nxp_RF.conf
 
 PRODUCT_PACKAGES += \
+    vendor.qti.diaghal-V1-ndk \
+    eglSubDriverAndroid \
+    libEGL_adreno \
+    libGLESv1_CM_adreno \
+    libGLESv2_adreno \
+    libVkLayer_ADRENO_qprofiler \
+    libq3dtools_adreno \
+    libq3dtools_esx \
+    libCB \
+    libOpenCL \
+    libadreno_app_profiles \
+    libadreno_utils \
+    libgpudataproducer \
+    libgsl \
+    libkcl \
+    libkernelmanager \
+    libllvm-glnext \
+    libllvm-qcom \
+    libllvm-qgl \
+    libvmmem \
+    vendor.qti.qspmhal@1.0 \
+    android.hardware.secure_element@1.0-impl \
+    btaudio_offload_if \
     com.qti.actuator.marble_ofilm_ov64b40_gt9764_wide_actuator \
     com.qti.eeprom.marble_ofilm_gc02m1_p24c64f_macro_i_eeprom \
     com.qti.eeprom.marble_ofilm_imx355_gt24p64e_ultra_i_eeprom \
@@ -787,20 +1036,77 @@ PRODUCT_PACKAGES += \
     com.qualcomm.mcx.linearmapper \
     com.qualcomm.mcx.policy.mfl \
     com.qualcomm.mcx.policy.xr \
+    com.qualcomm.qti.dpm.api@1.0_vendor \
+    com.qualcomm.qti.imscmservice@1.0 \
+    com.qualcomm.qti.imscmservice@2.0 \
+    com.qualcomm.qti.imscmservice@2.1 \
+    com.qualcomm.qti.imscmservice@2.2 \
     com.qualcomm.qti.mcx.usecase.extension \
+    com.qualcomm.qti.uceservice@2.0 \
+    com.qualcomm.qti.uceservice@2.1 \
+    com.qualcomm.qti.uceservice@2.2 \
+    com.qualcomm.qti.uceservice@2.3 \
+    deviceInfoServiceModuleNr \
+    android.hardware.bluetooth@1.0-impl-qti \
+    android.hardware.gatekeeper@1.0-impl-qti \
     camera.qcom \
     camera.xiaomi \
+    com.dsi.ant@1.0-impl \
     com.qti.chi.override \
     fingerprint.fpc.default \
     fingerprint.goodix.default \
+    vendor.qti.esepowermanager@1.1-impl \
+    vendor.qti.hardware.alarm@1.0-impl \
+    vendor.qti.hardware.bluetooth_audio@2.0-impl \
+    vendor.qti.hardware.bluetooth_audio@2.1-impl \
+    vendor.qti.hardware.bluetooth_sar@1.1-impl \
+    vendor.qti.hardware.btconfigstore@1.0-impl \
+    vendor.qti.hardware.btconfigstore@2.0-impl \
+    vendor.qti.hardware.capabilityconfigstore@1.0-impl \
+    vendor.qti.hardware.fm@1.0-impl \
+    vendor.qti.hardware.qccvndhal@1.0-impl \
+    vendor.qti.hardware.qseecom@1.0-impl \
+    vendor.qti.hardware.qteeconnector@1.0-impl \
+    vendor.qti.hardware.sensorscalibrate@1.0-impl \
+    vendor.qti.hardware.soter@1.0-impl \
+    vendor.qti.hardware.wifidisplaysession@1.0-impl \
     vendor.xiaomi.hardware.quickcamera@1.0-impl \
+    vulkan.adreno \
+    jcos_nq_client \
+    lib-imscommon \
+    lib-imsdpl \
+    lib-imsqimf \
+    lib-imsrcsservice \
+    lib-imsservice \
+    lib-imsvtcore \
+    lib-imsxml \
+    lib-rtpcommon \
+    lib-rtpcore \
+    lib-rtpsl \
     libAF \
+    libEvrcSwCodec \
+    libFace3DTA \
+    libFace3D_hlos \
+    libFileMux_proprietary \
+    libGPQTEEC_vendor \
+    libGPTEE_vendor \
+    libGPreqcancel \
+    libGPreqcancel_svc \
     libMiMotion \
+    libQ6MSFR_manager_stub \
+    libQSEEComAPI \
+    libQTEEConnector_listener \
+    libQTEEConnector_vendor \
+    libQcelp13SwCodec \
     libQnnHtpAltPrepV69Stub \
+    libQtiRilLoadable \
     libSNPE \
     libSnpeHtpV69Stub \
     libTrueSight \
     libXMFaceFocus \
+    libadm \
+    libadsp_default_listener \
+    libadsprpc \
     libaidenoiser \
     libalCFR \
     libalLDC \
@@ -819,10 +1125,16 @@ PRODUCT_PACKAGES += \
     libarcsoft_super_night_detection \
     libarcsoft_super_night_raw \
     libarcsoft_zoom_high_dynamic_range \
+    libaudio_log_utils \
+    libbacklight-calib \
     libbeauty_face_interface \
     libbitmlengine \
     libbitmlenginev2 \
+    libbluetooth_audio_session_qti \
+    libbluetooth_audio_session_qti_2_1 \
+    libbtnv \
     libc++_shared \
+    libcacertclient \
     libcamera_nn_stub \
     libcamera_scene \
     libcamerapostproc \
@@ -841,24 +1153,95 @@ PRODUCT_PACKAGES += \
     libcamxswispiqmodule \
     libcamxswprocessalgo \
     libcamxtintlessalgo \
+    libcapiv2svacnnvendor \
+    libcapiv2svarnnvendor \
+    libcapiv2uvvendor \
+    libcdfw \
+    libcdfw_remote_api \
+    libcdsp_default_listener \
+    libcdsprpc \
     libceres \
     libchilog \
+    libcne \
+    libcneapiclient \
+    libcneoplookup \
+    libcneqmiutils \
     libcom.qti.chinodeutils \
     libcom.xiaomi.debug \
     libcom.xiaomi.grallocutils \
     libcom.xiaomi.mawutils \
     libcom.xiaomi.metadatautils \
     libcom.xiaomi.pluginutils \
+    libconfigdb \
+    libcpion \
+    libcv_common \
+    libcvp2_1 \
+    libcvpcpuRev_skel \
+    libdataitems \
     libdeflicker \
+    libdiag \
+    libdigital-dimming \
+    libdisp-aba \
+    libdisplayqos \
+    libdisplayskuutils \
+    libdpmqmihal \
+    libdpps \
+    libdrmfs \
+    libdrmtime \
+    libdsd2pcm \
+    libdsi_netctrl \
+    libdsutils \
+    libeva \
+    libeva_util \
+    libface3d_dev \
+    libfastcrc \
+    libfastcvdsp_stub \
+    libfastcvopt \
+    libgame_enhance \
     libgf_ca \
     libgf_hal \
+    libgnsspps \
     libgoodixhwfingerprint \
+    libgrpc++_unsecure_prebuilt \
     libhdr10plus \
+    libhdr_backlight_adapter \
+    libhdr_tm \
+    libhdrdynamic \
+    libhdrdynamicootf \
+    libidl \
     libipebpsstriping \
     libipebpsstriping170 \
     libipebpsstriping480 \
+    libizat_client_api \
+    libizat_core \
     libjpege \
+    libkeymasterdeviceutils \
+    libkeymasterprovision \
+    libkeymasterutils \
+    liblbs_core \
+    libloc_api_v02 \
+    libloc_api_wds \
+    libloc_base_util \
+    libloc_eng_hub \
+    libloc_mq_client \
+    libloc_qwes_iface \
+    libloc_ril_client \
+    libloc_socket \
+    libloc_util \
+    liblocationservice \
+    liblocationservice_glue \
+    liblocdiagiface \
+    liblowi_client \
+    liblowi_common \
+    liblowi_wifihal \
+    liblqe \
+    libmasc \
+    libmcs \
     libmctfengine_stub \
+    libmdmdetect \
+    libmdmimgload \
+    libmdsprpc \
+    libmemutils \
     libmfGhostDetection \
     libmi_supernight_raw_checker \
     libmiai_deblur \
@@ -882,44 +1265,191 @@ PRODUCT_PACKAGES += \
     libmialgoengine \
     libmibokeh_845_video \
     libmibokeh_855 \
+    libminkdescriptor \
+    libminksocket_vendor \
     libmiphone_capture_bokeh \
     libmiphone_preview_bokeh \
     libmis_plugin_morpho \
+    libmisight \
+    libmlipay \
+    libmlipay@1.1 \
+    libmm-hdcpmgr \
     libmmcamera_bestats \
     libmmcamera_cac3 \
     libmmcamera_lscv35 \
     libmmcamera_mfnr \
     libmmcamera_mfnr_t4 \
     libmmcamera_pdpc \
+    libmmosal_vendor \
+    libmmrtpdecoder_vendor \
+    libmmrtpencoder_vendor \
     libmorpho_ubwc \
     libmorpho_video_stabilizer \
     libmpbase \
+    libnetmgr \
+    libnetmgr_common \
+    libnetmgr_datapath_proxy \
+    libnetmgr_nr_fusion \
+    libnetmgr_rmnet_ext \
+    libnetmgr_sscm3 \
+    libnetmgr_utils \
+    libnetmgrext_interface_client \
+    libnetmgrext_interface_server \
+    libnetmgrmodemproxy \
+    libnetmgrportutils \
+    libnetmgrxfrmutils \
+    libnlnetmgr \
+    liboemcrypto \
     libomp \
     libopencv \
     libopencv3a \
     libopestriping \
+    libops \
     libos \
+    libpal_net_if \
+    libpdmapper \
+    libpdnotifier \
+    libperfconfig \
+    libperfgluelayer \
+    libperfioctl \
+    libperipheral_client \
+    libqc2audio_base \
+    libqc2audio_basecodec \
+    libqc2audio_core \
+    libqc2audio_hooks \
+    libqc2audio_hwaudiocodec \
+    libqc2audio_platform \
+    libqc2audio_swaudiocodec \
+    libqc2audio_utils \
+    libqc2colorconvertfilter \
+    libqc2filter \
+    libqc2vppfilter \
+    libqcbor \
+    libqcc_file_agent \
+    libqcci_legacy \
+    libqcmaputils \
+    libqcodec2_base \
+    libqcodec2_basecodec \
+    libqcodec2_core \
+    libqcodec2_filterbase \
+    libqcodec2_hooks \
+    libqcodec2_mockfilter \
+    libqcodec2_mockqc2filter \
+    libqcodec2_platform \
+    libqcodec2_utils \
+    libqcodec2_v4l2codec \
+    libqcrilDataModule \
+    libqcrilNr \
+    libqcrilNrCellInfoModule \
+    libqcrilNrFramework \
+    libqcrilNrImsModule \
+    libqcrilNrLogger \
+    libqcrilNrPbmModule \
+    libqcrilNrQtiBus \
+    libqcrilNrQtiMutex \
+    libqcrilNrSmsModule \
+    libqcrilNrSocketModule \
+    libqcrilNrVoiceModule \
+    libqcrildataaidl \
+    libqcrildatactl \
+    libqcrildataqos \
+    libqdcm-algo \
+    libqdcm-json-mode-parser \
+    libqdcm-mode-parser \
+    libqdi \
+    libqdp \
+    libqdpr \
+    libqisl \
     libqll \
     libqll10 \
     libqllengine \
+    libqmi \
+    libqmi_cci \
+    libqmi_client_helper \
+    libqmi_client_qmux \
+    libqmi_common_so \
+    libqmi_csi \
+    libqmi_encdec \
+    libqmi_legacy \
+    libqmiservices \
+    libqppe \
+    libqrtr \
+    libqrtrclient \
+    libqseed3 \
     libqshcamera \
+    libqsocket \
+    libqti-perfd-client \
+    libqti-perfd \
+    libqti-util \
+    libqtigefar \
+    libqtikeymaster4 \
+    libqtikeymint \
     libquickcamera \
+    librcc \
+    librcmask \
     librelight_only \
     libremosaic_wrapper \
     libremosaiclib \
+    libril-db \
+    libril-legacy \
+    libril-qc-ltedirectdisc \
+    libril-qc-radioconfig \
+    librilqmimiscservices \
     librmsclib1 \
+    librpmb \
+    libscveCommon \
+    libscveCommon_stub \
+    libscveObjectSegmentation \
+    libscveObjectTracker \
+    libscveObjectTracker_stub \
+    libsdm-color \
+    libsdm-colormgr-algo \
+    libsdm-disp-vndapis \
+    libsdmextension \
+    libsdsprpc \
+    libsensor_calibration \
+    libsensorcal \
+    libsensorslog \
     libsfeShiftExtrapolation \
+    libshsc \
+    libshsusr_verinfo \
+    libsn100u_fw \
+    libsnapdragoncolor-manager \
+    libsnapdragoncolor-qdcm \
     libsnpe_dsp_domains_v2 \
     libsnpe_dsp_domains_v3 \
+    libsns_device_mode_stub \
+    libsns_direct_channel_stub \
+    libsns_registry_skel \
+    libsnsapi \
+    libsnsdiaglog \
+    libsoc_helper \
+    libspcom \
+    libspl \
+    libssc \
+    libssc_default_listener \
     libssccalapi@2.0 \
+    libssd \
+    libsubsystem_control \
     libsupermoon \
     libswregistrationalgo \
+    libsynergy_loc_api \
     libsynx \
+    libsys_info_cache \
+    libsystem_health_mon \
+    libtestutils \
     libtfestriping \
+    libthermalclient \
     libthreadutils \
+    libtime_genoff \
+    libtinyxml2_1 \
+    libtrustedapploader \
     libubifocus \
+    libultrasound_notify \
     libvideoBokeh \
     libvideofilter_only \
+    libvideotxr \
+    libvideoutils \
     libvidhance \
     libvidhance_active_ois \
     libvidhance_face_stabilizer \
@@ -927,12 +1457,192 @@ PRODUCT_PACKAGES += \
     libvidhance_ldc \
     libvidhance_stabilizer \
     libvidhance_super_stabilization \
+    libvppcommon \
+    libvpphcp \
+    libvpphvx \
+    libvpplibrary \
+    libvpptestutils \
+    libwfdcodecv4l2_proprietary \
+    libwfdcommonutils_proprietary \
+    libwfdconfigutils_proprietary \
+    libwfddisplayconfig_vendor \
+    libwfdhdcpcp \
+    libwfdhdcpservice_proprietary \
+    libwfdmminterface_proprietary \
+    libwfdmmservice_proprietary \
+    libwfdmmsrc_proprietary \
+    libwfdmodulehdcpsession \
+    libwfdrtsp_vendor \
+    libwfdsessionmodule \
+    libwfdsourcesession_proprietary \
+    libwfdsourcesm_proprietary \
+    libwfduibcinterface_vendor \
+    libwfduibcsink_vendor \
+    libwfduibcsinkinterface_vendor \
+    libwfduibcsrc_vendor \
+    libwfduibcsrcinterface_vendor \
+    libwfdutils_proprietary \
+    libwms \
+    libwqe \
+    libwvhidl \
+    libwvkeybox \
+    libxiaomi_qcril \
     libxmi_hdr_checker \
     libxmi_high_dynamic_range \
     libxmi_slow_motion_mein \
     libxmi_slow_motion_triger \
+    libxml \
+    libxtadapter \
+    ls_nq_client \
+    libwvdrmengine \
+    qcrilInterfaces \
+    qcrilMarshal \
+    qcrilNrQmiModule \
+    qcril_client \
+    qcrild_libqcrilnr \
+    qcrild_libqcrilnrutils \
+    qti.video.utils.videobufferlayout \
+    qtiPeripheralMgr \
+    qtiril-utils \
+    qtiwakelock \
+    se_nq_extn_client \
+    sensors.ssc \
+    sensors.touch.detect \
+    sensors.ultrasoundproximity \
+    libasphere \
+    vendor.display.color@1.0 \
+    vendor.display.color@1.1 \
+    vendor.display.color@1.2 \
+    vendor.display.color@1.3 \
+    vendor.display.color@1.4 \
+    vendor.display.color@1.5 \
+    vendor.display.color@1.6 \
+    vendor.display.color@1.7 \
+    vendor.display.postproc@1.0 \
+    vendor.libdpmctmgr \
+    vendor.libdpmfdmgr \
+    vendor.libdpmframework \
+    vendor.libdpmtcm \
+    vendor.libmwqemiptablemgr \
+    vendor.qti.data.factory@2.0 \
+    vendor.qti.data.factory@2.1 \
+    vendor.qti.data.factory@2.2 \
+    vendor.qti.data.factory@2.3 \
+    vendor.qti.data.factory@2.4 \
+    vendor.qti.data.factory@2.5 \
+    vendor.qti.data.mwqem@1.0 \
+    vendor.qti.data.slm@1.0 \
+    vendor.qti.diaghal@1.0_vendor \
+    vendor.qti.esepowermanager@1.0 \
+    vendor.qti.esepowermanager@1.1 \
+    vendor.qti.gnss-V3-ndk \
+    vendor.qti.gnss-V5-ndk \
+    vendor.qti.gnss-service \
+    vendor.qti.hardware.alarm@1.0 \
+    vendor.qti.hardware.bluetooth_sar@1.0 \
+    vendor.qti.hardware.bluetooth_sar@1.1 \
+    vendor.qti.hardware.cacert@1.0 \
     vendor.qti.hardware.camera.aon@1.0-service-impl \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
+    vendor.qti.hardware.data.cne.internal.api@1.0 \
+    vendor.qti.hardware.data.cne.internal.constants@1.0 \
+    vendor.qti.hardware.data.cne.internal.server@1.0 \
+    vendor.qti.hardware.data.cne.internal.server@1.1 \
+    vendor.qti.hardware.data.cne.internal.server@1.2 \
+    vendor.qti.hardware.data.connection@1.0 \
+    vendor.qti.hardware.data.connection@1.1 \
+    vendor.qti.hardware.data.connectionfactory-V1-ndk_platform \
+    vendor.qti.hardware.data.dataactivity-V1-ndk_platform \
+    vendor.qti.hardware.data.dynamicdds@1.0 \
+    vendor.qti.hardware.data.dynamicdds@1.1 \
+    vendor.qti.hardware.data.flow@1.0 \
+    vendor.qti.hardware.data.iwlan@1.0 \
+    vendor.qti.hardware.data.iwlan@1.1 \
+    vendor.qti.hardware.data.ka-V1-ndk_platform \
+    vendor.qti.hardware.data.latency@1.0 \
+    vendor.qti.hardware.data.lce@1.0 \
+    vendor.qti.hardware.data.qmi@1.0 \
+    vendor.qti.hardware.dpmservice@1.0_vendor \
+    vendor.qti.hardware.dpmservice@1.1_vendor \
+    vendor.qti.hardware.dsp@1.0 \
+    vendor.qti.hardware.fm@1.0 \
+    vendor.qti.hardware.mwqemadapter@1.0 \
+    vendor.qti.hardware.qccsyshal@1.0_vendor \
+    vendor.qti.hardware.qccsyshal@1.1_vendor \
+    vendor.qti.hardware.qccvndhal@1.0-halimpl \
+    vendor.qti.hardware.qccvndhal@1.0_vendor \
+    vendor.qti.hardware.qconfig@1.0 \
+    vendor.qti.hardware.qseecom@1.0 \
+    vendor.qti.hardware.qteeconnector@1.0 \
+    vendor.qti.hardware.radio.am@1.0 \
+    vendor.qti.hardware.radio.atcmdfwd@1.0 \
+    vendor.qti.hardware.radio.ims-V7-ndk_platform \
+    vendor.qti.hardware.radio.ims@1.0 \
+    vendor.qti.hardware.radio.ims@1.1 \
+    vendor.qti.hardware.radio.ims@1.2 \
+    vendor.qti.hardware.radio.ims@1.3 \
+    vendor.qti.hardware.radio.ims@1.4 \
+    vendor.qti.hardware.radio.ims@1.5 \
+    vendor.qti.hardware.radio.ims@1.6 \
+    vendor.qti.hardware.radio.ims@1.7 \
+    vendor.qti.hardware.radio.ims@1.8 \
+    vendor.qti.hardware.radio.internal.deviceinfo@1.0 \
+    vendor.qti.hardware.radio.lpa@1.0 \
+    vendor.qti.hardware.radio.lpa@1.1 \
+    vendor.qti.hardware.radio.lpa@1.2 \
+    vendor.qti.hardware.radio.qcrilhook@1.0 \
+    vendor.qti.hardware.radio.qtiradio-V5-ndk_platform \
+    vendor.qti.hardware.radio.qtiradio@1.0 \
+    vendor.qti.hardware.radio.qtiradio@2.0 \
+    vendor.qti.hardware.radio.qtiradio@2.1 \
+    vendor.qti.hardware.radio.qtiradio@2.2 \
+    vendor.qti.hardware.radio.qtiradio@2.3 \
+    vendor.qti.hardware.radio.qtiradio@2.4 \
+    vendor.qti.hardware.radio.qtiradio@2.5 \
+    vendor.qti.hardware.radio.qtiradio@2.6 \
+    vendor.qti.hardware.radio.uim@1.0 \
+    vendor.qti.hardware.radio.uim@1.1 \
+    vendor.qti.hardware.radio.uim@1.2 \
+    vendor.qti.hardware.radio.uim_remote_client@1.0 \
+    vendor.qti.hardware.radio.uim_remote_client@1.1 \
+    vendor.qti.hardware.radio.uim_remote_client@1.2 \
+    vendor.qti.hardware.radio.uim_remote_server@1.0 \
+    vendor.qti.hardware.sensorscalibrate@1.0 \
+    vendor.qti.hardware.slmadapter@1.0 \
+    vendor.qti.hardware.soter@1.0 \
+    vendor.qti.hardware.vpp@1.1 \
+    vendor.qti.hardware.vpp@1.2 \
+    vendor.qti.hardware.vpp@1.3 \
+    vendor.qti.hardware.vpp@2.0 \
+    vendor.qti.hardware.wifidisplaysession@1.0_vendor \
+    vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl \
+    vendor.qti.ims.callcapability@1.0 \
+    vendor.qti.ims.callinfo@1.0 \
+    vendor.qti.ims.configservice@1.0 \
+    vendor.qti.ims.configservice@1.1 \
+    vendor.qti.ims.connection@1.0 \
+    vendor.qti.ims.factory@1.0 \
+    vendor.qti.ims.factory@1.1 \
+    vendor.qti.ims.factory@2.0 \
+    vendor.qti.ims.factory@2.1 \
+    vendor.qti.ims.factory@2.2 \
+    vendor.qti.ims.rcsconfig@1.0 \
+    vendor.qti.ims.rcsconfig@1.1 \
+    vendor.qti.ims.rcsconfig@2.0 \
+    vendor.qti.ims.rcsconfig@2.1 \
+    vendor.qti.ims.rcssip@1.0 \
+    vendor.qti.ims.rcssip@1.1 \
+    vendor.qti.ims.rcssip@1.2 \
+    vendor.qti.ims.rcsuce@1.0 \
+    vendor.qti.ims.rcsuce@1.1 \
+    vendor.qti.ims.rcsuce@1.2 \
+    vendor.qti.imsrtpservice@3.0-service-Impl \
+    vendor.qti.imsrtpservice@3.0_vendor \
+    vendor.qti.latency@2.0 \
+    vendor.qti.latency@2.1 \
+    vendor.qti.memory.pasrmanager@1.0 \
+    vendor.qti.memory.pasrmanager@1.1 \
+    vendor.qti.qspmhal@1.0-impl \
     vendor.xiaomi.hardware.bgservice@1.0-impl \
     vendor.xiaomi.hardware.bgservice@1.0 \
     vendor.xiaomi.hardware.campostproc@1.0-service-impl \
@@ -1021,7 +1731,216 @@ PRODUCT_PACKAGES += \
     misound_res_headphone \
     misound_res_spk \
     misound_res_spk4ch \
+    com.qualcomm.qti.dpm.api@1.0 \
+    lib-imsvideocodec \
+    lib-imsvt \
+    lib-imsvtextutils \
+    lib-imsvtutils \
+    libdiag_system \
+    libdpmctmgr \
+    libdpmfdmgr \
+    libdpmframework \
+    libdpmtcm \
+    libimscamera_jni \
+    libimsmedia_jni \
+    libmmosal \
+    libmmparser_lite \
+    libmmrtpdecoder \
+    libmmrtpencoder \
+    libqcc \
+    libqcc_file_agent_sys \
+    libqccdme \
+    libqccfileservice \
+    libwfdavenhancements \
+    libwfdclient \
+    libwfdcommonutils \
+    libwfdconfigutils \
+    libwfddisplayconfig \
+    libwfdmminterface \
+    libwfdmmsink \
+    libwfdmmsrc_system \
+    libwfdnative \
+    libwfdrtsp \
+    libwfdservice \
+    libwfdsinksm \
+    libwfduibcinterface \
+    libwfduibcsink \
+    libwfduibcsinkinterface \
+    libwfduibcsrc \
+    libwfduibcsrcinterface \
+    vendor.qti.ImsRtpService-V1-ndk \
+    vendor.qti.diaghal@1.0 \
+    vendor.qti.hardware.dpmaidlservice-V1-ndk \
+    vendor.qti.hardware.dpmservice@1.0 \
+    vendor.qti.hardware.dpmservice@1.1 \
+    vendor.qti.hardware.qccsyshal@1.0 \
+    vendor.qti.hardware.qccsyshal@1.1 \
+    vendor.qti.hardware.qccsyshal@1.2-halimpl \
+    vendor.qti.hardware.qccsyshal@1.2 \
+    vendor.qti.hardware.qccvndhal@1.0 \
+    vendor.qti.hardware.wifidisplaysession@1.0 \
+    vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk \
+    vendor.qti.imsrtpservice@3.0 \
+    vendor.qti.imsrtpservice@3.1 \
+    vendor.qti.qccvndhal_aidl-V1-ndk \
+    CACertService \
+    CneApp \
+    IWlanService \
+    SoterService \
+    TimeService \
+    com.qualcomm.qti.gpudrivers.taro.api31 \
+    uimgbaservice \
+    HotwordEnrollmentXGoogleHEXAGON_WIDEBAND \
+    HotwordEnrollmentYGoogleHEXAGON_WIDEBAND \
+    AtFwd2 \
+    ImsRcsService \
+    PowerOffAlarm \
+    QCC \
+    QtiTelephonyService \
+    QtiTelephony \
+    WfdService \
+    dpmserviceapp \
+    ims \
+    qcrilmsgtunnel \
+    WfdCommon \
+    uimgbalibrary \
+    uimgbamanagerlibrary \
+    uimservicelibrary \
+    com.android.hotwordenrollment.common.util \
+    com.qti.dpmframework \
+    dpmapi \
+    qcrilhook \
+    vendor.qti.hardware.alarm-V1.0-java \
+    vendor.qti.ims.connection-V1.0-java \
+    vendor.qti.ims.connectionaidlservice-V1-java \
+    vendor.qti.ims.factory-V2.0-java \
+    vendor.qti.ims.factory-V2.1-java \
+    vendor.qti.ims.factory-V2.2-java \
+    vendor.qti.ims.factoryaidlservice-V1-java \
+    vendor.qti.ims.rcssip-V1.0-java \
+    vendor.qti.ims.rcssip-V1.1-java \
+    vendor.qti.ims.rcssip-V1.2-java \
+    vendor.qti.ims.rcssipaidlservice-V1-java \
+    vendor.qti.ims.rcsuce-V1.0-java \
+    vendor.qti.ims.rcsuce-V1.1-java \
+    vendor.qti.ims.rcsuce-V1.2-java \
+    vendor.qti.ims.rcsuceaidlservice-V1-java \
+    android.hardware.security.keymint-service-qti.xml \
+    c2_manifest_vendor.xml \
+    c2_manifest_vendor_audio.xml \
+    dataconnection-saidl.xml \
+    manifest_android.hardware.drm@1.4-service.widevine.xml \
+    manifest_vendor.xiaomi.hardware.mlipay.xml \
+    qtiradio-saidl.xml \
+    vendor.qti.diag.hal.service.xml \
+    vendor.qti.gnss-service.xml \
+    vendor.qti.hardware.perf.xml \
+    vendor.qti.hardware.qconfig@1.0-service.xml \
+    vendor.qti.hardware.radio.ims.xml \
+    vendor.qti.hardware.vpp@2.0-service.xml \
     vendor.xiaomi.hardware.quickcamera@1.0-service.xml \
+    ATFWD-daemon \
+    SoterProvisioningTool \
+    adpl \
+    adsprpcd \
     batterysecret \
+    cdsprpcd \
+    cnd \
+    cnss-daemon \
+    diag-router \
+    dpmQmiMgr \
+    dspservice \
+    edgnss-daemon \
+    android.hardware.bluetooth@1.0-service-qti \
+    android.hardware.drm@1.4-service.widevine \
+    android.hardware.gatekeeper@1.0-service-qti \
+    android.hardware.keymaster@4.1-service-qti \
+    android.hardware.security.keymint-service-qti \
+    qconfigservice \
+    qcrilNrd \
+    vendor.display.color@1.0-service \
     vendor.qti.camera.provider@2.7-service_64 \
-    vendor.xiaomi.hardware.quickcamera@1.0-service
+    vendor.qti.esepowermanager@1.1-service \
+    vendor.qti.hardware.alarm@1.0-service \
+    vendor.qti.hardware.capabilityconfigstore@1.0-service \
+    vendor.qti.hardware.perf-hal-service \
+    vendor.qti.hardware.qseecom@1.0-service \
+    vendor.qti.hardware.qteeconnector@1.0-service \
+    vendor.qti.hardware.sensorscalibrate@1.0-service \
+    vendor.qti.hardware.soter@1.0-service \
+    vendor.qti.media.c2@1.0-service \
+    vendor.qti.media.c2audio@1.0-service \
+    vendor.qti.secure_element@1.2-service \
+    vendor.xiaomi.hardware.quickcamera@1.0-service \
+    ims_rtp_daemon \
+    imsdaemon \
+    init.qcom.sensors \
+    init.qti.qcv \
+    irsc_util \
+    ks \
+    loc_launcher \
+    lowi-server \
+    mdm_helper \
+    mdm_helper_proxy \
+    mi_thermald \
+    mlid \
+    mlipayd@1.1 \
+    msm_irqbalance \
+    netmgrd \
+    nv_mac \
+    pd-mapper \
+    pm-proxy \
+    pm-service \
+    port-bridge \
+    power_off_alarm \
+    ppd \
+    qcc-trd \
+    qcom-system-daemon \
+    qdcmss \
+    qmipriod \
+    qms \
+    qrtr-ns \
+    qseecom_sample_client \
+    qseecomd \
+    qti \
+    qtigetprop \
+    qtisetprop \
+    rmt_storage \
+    sensors.qti \
+    shsusrd \
+    sscrpcd \
+    ssgqmigd \
+    ssgtzd \
+    ssr_diag \
+    ssr_setup \
+    subsystem_ramdump \
+    tftp_server \
+    thermal-engine-v2 \
+    time_daemon \
+    vendor.dpmd \
+    vendor.qti.hardware.soter@1.0-provision \
+    vendor.qti.qspmhal@1.0-service \
+    vmmgr \
+    vppservice \
+    wfdhdcphalservice \
+    wfdvndservice \
+    wifidisplayhalservice \
+    xtra-daemon \
+    dpmd \
+    qccsyshal@1.2-service \
+    tcmd \
+    wfdservice64
+
+PRODUCT_PACKAGES += \
+    system_ext_priv-app_ims_lib_arm64_libimscamera_jni_so \
+    system_ext_priv-app_ims_lib_arm64_libimsmedia_jni_so \
+    system_ext_priv-app_WfdService_lib_arm64_libwfdnative_so \
+    vendor_lib_libEGL_adreno_so \
+    vendor_lib_libGLESv2_adreno_so \
+    vendor_lib_libq3dtools_adreno_so \
+    vendor_lib64_libEGL_adreno_so \
+    vendor_lib64_libGLESv2_adreno_so \
+    vendor_lib64_libq3dtools_adreno_so
+
+PRODUCT_BOOT_JARS += \
+    WfdCommon
