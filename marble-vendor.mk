@@ -1423,7 +1423,6 @@ PRODUCT_PACKAGES += \
     libtinyxml2_1 \
     libtrustedapploader \
     libubifocus \
-    libultrasound_notify \
     libvideoBokeh \
     libvideofilter_only \
     libvideotxr \
@@ -1486,7 +1485,6 @@ PRODUCT_PACKAGES += \
     se_nq_extn_client \
     sensors.ssc \
     sensors.touch.detect \
-    sensors.ultrasoundproximity \
     libasphere \
     vendor.display.color@1.0 \
     vendor.display.color@1.1 \

@@ -20981,33 +20981,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-    name: "libultrasound_notify",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/libultrasound_notify.so",
-            ],
-            shared_libs: [
-                "libcutils",
-                "liblog",
-                "libutils",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
     name: "libvideoBokeh",
     owner: "xiaomi",
     strip: {
@@ -22884,43 +22857,6 @@ cc_prebuilt_library_shared {
                 "android.hardware.sensors@2.1",
                 "libfmq",
                 "libpower",
-                "libc++",
-                "libc",
-                "libm",
-                "libdl",
-            ],
-        },
-    },
-    compile_multilib: "64",
-    prefer: true,
-    soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-    name: "sensors.ultrasoundproximity",
-    owner: "xiaomi",
-    strip: {
-        none: true,
-    },
-    target: {
-        android_arm64: {
-            srcs: [
-                "proprietary/vendor/lib64/sensors.ultrasoundproximity.so",
-            ],
-            shared_libs: [
-                "liblog",
-                "libcutils",
-                "libutils",
-                "libultrasound_notify",
-                "libfmq",
-                "libhidltransport",
-                "libhidlbase",
-                "libssc",
-                "libhardware",
-                "android.hardware.sensors@2.0",
-                "sensors.ssc",
-                "android.hardware.sensors@2.0-ScopedWakelock",
-                "android.hardware.sensors@2.1",
                 "libc++",
                 "libc",
                 "libm",
