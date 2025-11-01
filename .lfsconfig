@@ -1,3 +1,2 @@
 [lfs]
-    url = "https://lfs.undocumented.software/lfs/blobs.git/info/lfs"
-    pushurl = "ssh://git@lfs.undocumented.software/lfs/blobs.git"
+    url = "https://codeberg.org/fiqri19102002/proprietary_vendor_xiaomi_marble.git/info/lfs"
