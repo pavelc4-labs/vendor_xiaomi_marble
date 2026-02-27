@@ -1190,6 +1190,7 @@ PRODUCT_PACKAGES += \
     libipebpsstriping480 \
     libizat_client_api \
     libizat_core \
+    libjnihelper \
     libjpege \
     libkeymasterdeviceutils \
     libkeymasterprovision \
